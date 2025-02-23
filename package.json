@@ -1,9 +1,6 @@
 {
   "name": "hello-cdk",
   "version": "0.1.0",
-  "bin": {
-    "hello-cdk": "bin/hello-cdk.js"
-  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
@@ -15,15 +12,13 @@
     "@types/node": "22.7.9",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
-    "aws-cdk": "2.1000.2",
     "ts-node": "^10.9.2",
     "typescript": "~5.6.3"
   },
   "dependencies": {
     "aws-cdk-lib": "2.179.0",
-    "constructs": "^10.0.0",
-    "@aws-cdk/aws-apigateway": "_",
-    "@aws-cdk/aws-dynamodb": "_",
-    "@aws-cdk/aws-lambda": "*"
+    "@aws-sdk/client-dynamodb": "^3.500.0",
+    "@aws-sdk/util-dynamodb": "^3.500.0",
+    "constructs": "^10.0.0"
   }
 }
